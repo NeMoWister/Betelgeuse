@@ -1,0 +1,6 @@
+.idea
+/caches
+/logs
+.env
+DockerFile
+gui
