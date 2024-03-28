@@ -1,71 +1,10 @@
 {
   "anime_list": [
     {
-      "name": "пять невест",
-      "path": "D:/YandexDisk/Переезд/пять невест",
+      "name": "name",
+      "path": "path",
       "chance": 0.1,
-      "cache": "auto"
-    },
-    {
-      "name": "милый во франксе",
-      "path": "D:/YandexDisk/Переезд/frankxx",
-      "chance": 0.05,
-      "cache": "auto"
-    },
-    {
-      "name": "разное",
-      "path": "D:/YandexDisk/Переезд/арты",
-      "chance": 0.1,
-      "cache": "auto"
-    },
-    {
-      "name": "волчица и пряности",
-      "path": "D:/YandexDisk/Переезд/Волчица",
-      "chance": 0.05,
-      "cache": "auto"
-    },
-    {
-      "name": "среншин",
-      "path": "D:/YandexDisk/Переезд/геншин",
-      "chance": 0.05,
-      "cache": "auto"
-    },
-    {
-      "name": "кагуя",
-      "path": "D:/YandexDisk/Переезд/кагуя",
-      "chance": 0.1,
-      "cache": "auto"
-    },
-    {
-      "name": "фейтан",
-      "path": "D:/YandexDisk/Переезд/фейт",
-      "chance": 0.3,
-      "cache": "auto"
-    },
-    {
-      "name": "тсукихиме",
-      "path": "D:/YandexDisk/Переезд/тсукихиме",
-      "chance": 0.1,
-      "cache": "auto"
-    },
-    {
-      "name": "глупый свин",
-      "path": "D:/YandexDisk/Переезд/Глупый свин",
-      "chance": 0.05,
-      "cache": "auto"
-    },
-    {
-      "name": "врата штейна",
-      "path": "D:/YandexDisk/Переезд/врата штейна",
-      "chance": 0.05,
       "cache": "auto"
     }
-  ],
-  "channel_id": [
-    {
-      "id": 983601118590423080,
-      "name": "ВГ"
-    }
-  ],
-  "number_of_starts": 1
+  ]
 }
