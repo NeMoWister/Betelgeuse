@@ -85,7 +85,7 @@ To get a local copy up and running follow these simple example steps.
 - [x] Slash commands
 - [x] Caching previous posts
 - [x] Logs
-- [ ] Image tags
+- [ ] Image tags support
 - [ ] Add Custom databases for everyone on main bot
 - [ ] Add Schedule viewing
 - [ ] Multi-language Support
