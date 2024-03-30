@@ -108,9 +108,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - https://t.me/nemowister
+Telegram - https://t.me/nemowister
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Live demo - https://discord.com/invite/Ccm4FVfkHs
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
