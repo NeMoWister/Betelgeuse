@@ -19,23 +19,20 @@ class ImageSelector:
         self.max_cache_size = int(0.9 * len(self.files)) if len(self.files) > 100 else int(0.9 * len(self.files)) - 11
 
     def get_cache_path(self, image_path: str) -> str:
-        """
+        """Возвращает путь к кешу
 
-        :param image_path:
-        :return:
-        """
+        :param image_path: путь к файлу
+        :return: str: путь к кешу"""
         # Генерируем уникальный путь для кеша на основе хэша пути
         hash_object = md5(image_path.encode())
         hash_str = hash_object.hexdigest()
         return os.path.join(self.cache_path, f"cache_{hash_str}.pkl")
 
     def load_cache(self, image_path: str, max_cache_len: int):
-        """
+        """Загружает кеш из файла
 
-        :param image_path:
-        :param max_cache_len:
-        :return:
-        """
+        :param image_path: путь к файлу
+        :param max_cache_len: максимальный размер кеша"""
         cache_path = self.get_cache_path(image_path)
         try:
             with open(cache_path, "rb") as cache_file:
@@ -46,13 +43,12 @@ class ImageSelector:
             print(f"Ошибка при загрузке кеша для {image_path}: {e}")
             return deque(maxlen=max_cache_len)
 
-    def save_cache(self, image_path: str, cache) -> None:
-        """
+    def save_cache(self, image_path: str, cache: deque) -> None:
+        """Сохраняет файл в кеш
 
-        :param image_path:
-        :param cache:
-        :return:
-        """
+        :param image_path: путь к файлу
+        :param cache: кеш
+        :return: None"""
         cache_path = self.get_cache_path(image_path)
         try:
             with open(cache_path, "wb") as cache_file:
@@ -61,10 +57,9 @@ class ImageSelector:
             print(f"Ошибка при сохранении кеша для {image_path}: {e}")
 
     def select_images(self) -> list:
-        """
+        """Возвращает список рандомно выбранных файлов
 
-        :return:
-        """
+        :return: list: список файлов"""
         out = []
         cache = self.load_cache(self.mychoice['path'], self.max_cache_size)
 

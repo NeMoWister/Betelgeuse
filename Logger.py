@@ -9,11 +9,10 @@ class BotLogger:
         makedirs(self.log_path, exist_ok=True)
 
     def info(self, messages: list) -> None:
-        """
+        """Пишет лог в файл
 
-        :param messages:
-        :return:
-        """
+        :param messages: список сообщений
+        :return: None"""
         with open(path.join(self.log_path, f'log_{self.time["time"]}.txt'), mode='w') as file:
             for line in messages:
                 file.write(f'{line}\n')

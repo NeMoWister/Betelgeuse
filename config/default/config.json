@@ -1,9 +1,15 @@
 {
-  "anime_list": [
+  "_list": [
     {
       "name": "name",
       "path": "path",
-      "chance": 0.1,
+      "chance": 0.8,
+      "cache": "auto"
+    },
+    {
+      "name": "name2",
+      "path": "path2",
+      "chance": 0.2,
       "cache": "auto"
     }
   ]

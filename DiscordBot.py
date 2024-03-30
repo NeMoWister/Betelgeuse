@@ -24,7 +24,12 @@ token = getenv('token')
 bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
 
 
-async def background_process(server_id: int, theme: str):
+async def background_process(server_id: int, theme: str) -> None:
+    """Получает id сервера и отправляет рандомные изображения
+
+    :param server_id: id сервера
+    :param theme: тема или категория изображений(конфигурирется в config.json)
+    :return: None"""
     channel = bot.get_channel(sm.get_channel_id_by_server(server_id))
 
     image_selector = ImageSelector(config_data, theme)
@@ -35,7 +40,10 @@ async def background_process(server_id: int, theme: str):
     await channel.send(files=[discord.File(file) for file in out])
 
 
-def time_until_next_hour():
+def time_until_next_hour() -> int:
+    """Возвращает время до начала следующего часа
+    :return: int: количество секунд до следующего часа
+    """
     now = datetime.datetime.now()
     next_hour = (now + datetime.timedelta(hours=1)).replace(minute=0, second=0, microsecond=0)
     _time_until_next_hour = next_hour - now
