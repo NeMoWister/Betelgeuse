@@ -7,7 +7,6 @@
   <h3 align="center">Betelgeuse Discord Bot</h3>
 
   <p align="center">
-    <br />
     <a href="https://discord.com/invite/Ccm4FVfkHs">Dev server</a>
     ·
     <a href="https://discord.gg/HTTCbSfPeY">Report Bug</a>
