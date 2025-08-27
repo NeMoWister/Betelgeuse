@@ -108,8 +108,6 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Telegram - https://t.me/nemowister
 
-Live demo - https://discord.com/invite/Ccm4FVfkHs
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
